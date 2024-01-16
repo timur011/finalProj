@@ -7,6 +7,39 @@
     <title>Document</title>
 </head>
 <body>
+    <h1> Javascript Events</h1>
+
+    <h2> What is an event?</h2> 
+            <p> An event is something the user or browser does</p>
     
+    <h2> Example </h2>
+
+    <p id = "count" > <strong> CLICKKKKKKKKER </strong> </p>
+
+    <p>When you click on the button, </p>
+
+    <button onclick= "addCount()">Click me for a surprise!</button>
+    <button onclick= "Reset()">Click me to reset the count!</button>
+  
+    
+    <script>
+        var count = 0;
+
+        function addCount()
+        {
+            count += 1;
+            document.getElementById("count").innerHTML = count;
+
+        }
+
+        function Reset()
+        {
+            count = 0;
+            document.getElementById("count").innerHTML = count;
+
+        }
+
+
+    </script>
 </body>
 </html>
