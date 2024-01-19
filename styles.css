@@ -26,6 +26,7 @@
 .grid-container a {
     display: block;
     padding: 50px 50px;
+    text-align: center;
 }
 
 a:hover{
@@ -34,4 +35,12 @@ a:hover{
 
 a:link{
     text-decoration: none;
+}
+
+.functionsDrawing {
+    text-align: center;
+}
+
+body {
+    background-color: #2196F3;
 }

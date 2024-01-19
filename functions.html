@@ -5,16 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="objStyles.css">
 </head>
 <body>
     <h1> Functions</h1> 
-    <p>In Javascript, functions are code designed to perform a certain task.  </p>
+    
+    <p>In Javascript, functions are code designed to perform a certain task.  They can be designed to perform pretty much every task, and make the code a lot more organized and reusable.</p>
+    
+    <br>
+    <p>Lets say I want to make a function that takes in the users input as an age and returns it to the user.  I will call it <strong>returnAge()</strong>. </p>
+    <p>I will do this by asking the user for input (using the built in "prompt" function) then changing the innerHTML of a p element to the users input! </p>
+
+
+    <button onclick = "returnAge()" >Click the button to try It! </button>
+    <p id="changeText"> </p>
+
     <h2> here are a couple built in funtions</h2>
     <ul>
         <li>slice</li> 
-        <li> split </li>
-        <li> getElementById </li>
+        <li>split </li>
+        <li>getElementById </li>
         <li>substr</li> 
     </ul>
+
+    <script>
+        function returnAge()
+        {
+
+            var ageUser = prompt("enter your age");
+
+            document.getElementById("changeText").innerHTML = "You are " + ageUser;
+
+        }
+
+    </script>
 </body>
 </html>
